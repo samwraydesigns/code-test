@@ -1,0 +1,137 @@
+@@include('./../includes/global/header.html')
+
+
+
+<!-- start: main -->
+<div class="main" id="main" role="main">
+  <div class="container-fluid">
+    <div class="row justify-content-md-center">
+
+      <div class="col-md-10">
+        <section>
+          <div class="section-intro">
+            <h1>We Do Awesome Things</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+
+          <figure class="image-block">
+            <picture>
+              <source srcset="/images/tropical-summer-desktop.jpg" media="(min-width: 768px)">
+              <img src="/images/tropical-summer-mobile.jpg" alt="Tropical Summer" />
+            </picture>
+          </figure>
+        </section>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="full-bar">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="full-bar__inner">
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit!</h3>
+            <a href="tel:0123456789" class="btn btn--secondary">Call Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <section>
+          <div class="section-intro">
+            <h2 class="h1">We Do Really Awesome Things</h2>
+            <p>Lorem ipsum dolor sit amet, <a href="#">link</a> consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna
+              aliqua.</p>
+          </div>
+
+          <div class="services">
+            <services></services>
+          </div>
+
+          <figure>
+            <blockquote>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna
+                aliqua.</p>
+              <figcaption>Roy Barber - Dotcentric</figcaption>
+            </blockquote>
+          </figure>
+        </section>
+
+        <section>
+          <div class="section-intro">
+            <h2 class="h1">Contact About Awesomeness</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna
+              aliqua.</p>
+          </div>
+
+          <div class="form-area">
+            <form action="post" class="form">
+              <fieldset>
+                <legend class="visually-hidden">Contact About Awesomeness</legend>
+                <div class="form__group">
+                  <label for="yourName">Your name</label>
+                  <div class="form__item">
+                    <input type="text" id="yourName" name="your-name" placeholder="Please enter your name" required
+                      data-lpignore="true">
+                    <div class="validation">Error message here</div>
+                  </div>
+                </div>
+                <div class="form__group">
+                  <label for="telNo">Your Telephone Number</label>
+                  <div class="form__item">
+                    <input type="tel" id="telNo" name="tel-no" placeholder="Please enter your telephone number"
+                      data-lpignore="true" required>
+                    <div class="validation">Error message here</div>
+                  </div>
+                </div>
+                <div class="form__group">
+                  <label for="txtEmail">Your Email</label>
+                  <div class="form__item has-error">
+                    <input type="email" id="txtEmail" name="email" placeholder="Please enter your email" required
+                      data-lpignore="true">
+                    <div class="validation">Error: Please enter a valid email</div>
+                  </div>
+                </div>
+
+                <div class="form__group">
+                  <label for="txtMessage">Your Message</label>
+                  <div class="form__item">
+                    <textarea id="txtMessage" name="message" rows="6" required
+                      placeholder="Please enter your message"></textarea>
+                    <div class="validation">Error message here</div>
+                    <p><small>Please enter as much detail as possible</small></p>
+                  </div>
+                </div>
+
+              </fieldset>
+
+              <div class="form__buttons">
+                <input name="submit" type="submit" class="btn btn--secondary" value="Submit">
+              </div>
+
+            </form>
+          </div>
+        </section>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+<!-- end: main -->
+
+
+@@include('./../includes/global/footer.html')

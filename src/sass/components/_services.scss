@@ -1,0 +1,27 @@
+.services {
+}
+
+.services__item {
+  text-align: center;
+  margin: 0 0 20px;
+
+  @include breakpoint(md) {
+    margin: 0;
+  }
+
+  h3 {
+    @include between-breakpoints($xs-min, $sm-max) {
+      margin: 10px 0;
+    }
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  p {
+    color: $text-grey;
+    font-weight: 300;
+  }
+}

@@ -1,0 +1,68 @@
+/*------------------------------------*\
+    $SITE MENU
+\*------------------------------------*/
+
+.site-menu {
+  margin: 0;
+  padding: 0;
+  clear: both;
+  list-style: none;
+  display: block;
+  text-align: center;
+
+  @include breakpoint(md) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    padding: 6px 25px;
+  }
+}
+
+/*li*/
+.site-menu__item {
+  display: block;
+}
+
+/*a*/
+.site-menu__link {
+  padding: 10px 29px;
+  display: inline-block;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  text-decoration: none;
+  color: $white;
+  text-align: center;
+
+  &:focus {
+    text-decoration: underline;
+  }
+
+  @include breakpoint(md) {
+    color: $color-text;
+    font-size: 1.6rem;
+    display: block;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  &.btn {
+    color: $white;
+    text-align: center;
+
+    @include between-breakpoints($xs-min, $sm-max) {
+      display: block;
+      max-width: 198px;
+      margin: 20px auto 0;
+    }
+
+    &:hover,
+    &:focus {
+      color: $red;
+    }
+  }
+}

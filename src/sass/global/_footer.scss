@@ -1,0 +1,47 @@
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
+
+.footer {
+  background: $blue;
+  color: $white;
+  padding: 25px 0;
+  margin: 40px 0 0;
+  text-align: center;
+
+  @include breakpoint(md) {
+    margin: 100px 0 0;
+    text-align: left;
+  }
+}
+
+.footer__inner {
+  width: 100%;
+  align-items: center;
+
+  @include breakpoint(md) {
+    display: flex;
+  }
+
+  p {
+    font-weight: 400;
+    margin: 0;
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+
+    span {
+      color: $red;
+    }
+  }
+
+  img {
+    margin: 20px auto 30px;
+
+    @include breakpoint(md) {
+      margin-left: auto;
+      order: 2;
+    }
+  }
+}

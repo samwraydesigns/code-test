@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8" height="9.012" viewBox="0 0 8 9.012">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="required" d="M7.9,6.759a.728.728,0,0,1-.995.267L4.729,5.767V8.284a.728.728,0,0,1-1.457,0V5.767L1.093,7.026A.728.728,0,1,1,.365,5.765L2.544,4.506.364,3.248a.728.728,0,1,1,.728-1.261L3.272,3.245V.728a.728.728,0,0,1,1.457,0V3.245L6.907,1.986a.728.728,0,1,1,.728,1.261L5.457,4.506,7.635,5.764a.728.728,0,0,1,.267.995Z" transform="translate(12 11)"/>
+    </clipPath>
+  </defs>
+  <g id="Group_1" data-name="Group 1" transform="translate(-12 -11)">
+    <path id="required-2" data-name="required" d="M7.9,6.759a.728.728,0,0,1-.995.267L4.729,5.767V8.284a.728.728,0,0,1-1.457,0V5.767L1.093,7.026A.728.728,0,1,1,.365,5.765L2.544,4.506.364,3.248a.728.728,0,1,1,.728-1.261L3.272,3.245V.728a.728.728,0,0,1,1.457,0V3.245L6.907,1.986a.728.728,0,1,1,.728,1.261L5.457,4.506,7.635,5.764a.728.728,0,0,1,.267.995Z" transform="translate(12 11)"/>
+    <g id="Mask_Group_1" data-name="Mask Group 1" clip-path="url(#clip-path)">
+      <g id="Color_State_Error" data-name="Color/State/Error" transform="translate(-21 -28)">
+        <rect id="color" width="80" height="80" fill="#d0021b"/>
+      </g>
+    </g>
+  </g>
+</svg>

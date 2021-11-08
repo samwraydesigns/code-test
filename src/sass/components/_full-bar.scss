@@ -1,0 +1,36 @@
+.full-bar {
+  background: $red;
+  padding: 30px 0 40px;
+  color: $white;
+
+  @include breakpoint(md) {
+    padding: 30px 0;
+  }
+
+  h3 {
+    color: $white;
+    margin: 0 0 20px;
+
+    @include breakpoint(md) {
+      margin: 0;
+    }
+  }
+}
+
+.full-bar__inner {
+  width: 100%;
+  text-align: center;
+
+  @include breakpoint(md) {
+    align-items: center;
+    text-align: left;
+    display: flex;
+  }
+
+  .btn {
+    display: block;
+    @include breakpoint(md) {
+      margin-left: auto;
+    }
+  }
+}

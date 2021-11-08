@@ -1,0 +1,176 @@
+/*------------------------------------*\
+    $VARIABLES
+\*------------------------------------*/
+
+// Responsiveness
+// -------------------------
+// 'true' is default
+//  setting this creates extra responsive classes targetting defined breakpoints
+//  eg the 'visually-hidden' mixin
+$responsive: true !default;
+
+// Typography
+// -------------------------
+
+$font-family-sans: Arial, sans-serif !default;
+$font-family-serif: Georgia, 'Times New Roman', Times, serif !default;
+// $font-family-mono:              Monaco, Menlo, Consolas, 'Courier New', monospace !default;
+// $font-family-times-new-roman:   'Times New Roman', Times, Georgia, 'DejaVu Serif', serif;
+// $font-family-times:             Times, 'Times New Roman', Georgia, 'DejaVu Serif', serif;
+// $font-family-georgia:           Georgia, 'Times New Roman', 'DejaVu Serif', serif;
+// $font-family-verdana:           Verdana, Tahoma, 'DejaVu Sans', sans-serif;
+// $font-family-tahoma:            Tahoma, Verdana, 'DejaVu Sans', sans-serif;
+// $font-family-helvetica:         Helvetica, Arial, 'Nimbus Sans L', sans-serif;
+// $font-family-arial:             Arial, 'Helvetica Neue', Helvetica, sans-serif;
+
+$font-family-base: $font-family-serif !default;
+$font-family-alt: $font-family-sans !default;
+
+// Custom 'brand' fonts
+$brand-font-1: 'Roboto', sans-serif; //Available weights 400,600,700
+
+// Let's set the base font size to 62.5% (10px) for easier calculations
+$base-font-size: 62.5%;
+$base-line-height: 1.5 !default;
+
+$body-font-desktop: 1.6rem; // = 16px
+$body-font-mobile: 1.6rem; // = 16px
+
+// Breakpoints
+// -------------------------
+
+// Named breakpoints
+$breakpoint-xs: 320px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Suggestion - provide a minimum/maximum so media queries don't overlap when required
+// use as max/min values for mixins for responsive utilities etc
+
+$xs-min: 0;
+$xs-max: ($breakpoint-sm - 1);
+
+$sm-min: $breakpoint-sm;
+$sm-max: ($breakpoint-md - 1);
+
+$md-min: $breakpoint-md;
+$md-max: ($breakpoint-lg - 1);
+
+$lg-min: $breakpoint-lg;
+$lg-max: ($breakpoint-xl - 1);
+
+$xl-min: $breakpoint-xl;
+
+// Paths
+// -------------------------
+
+// Path to images folder
+// $images: /Static/images;
+
+// Path to fonts folder
+// $fonts: /fonts;
+
+// Colors
+// -------------------------
+
+// Base colors
+$white: #fff;
+$black: #000;
+$pink: #d0021b;
+
+$grey-dark: #666;
+$grey-light: #ddd;
+$grey-lighter: #eee;
+$text-grey: #8d9ca8;
+$text-placeholder: #9b9b9b;
+
+$blue: #0e3757;
+$purple: #7d1f71;
+$green: #298700;
+$red: #f56a75;
+$orange: #ffcc66;
+$yellow: #ff9;
+
+// Brand colors
+$brand-colour-1: $orange;
+
+// Text colors
+$color-text: $blue;
+$color-headings: $blue;
+$color-error: #eee;
+
+// Link colors
+$color-link-active: $red;
+$color-link-visited: $red;
+$color-link-hover: $blue;
+$color-link-focus: $blue;
+$color-link-disabled: #d4d4d4;
+
+// Borders
+// -------------------------
+
+// Border colors
+$color-border: $grey-light;
+$color-border-dark: $grey-dark;
+$color-border-light: $grey-lighter;
+
+//  Border styling
+$border-radius: 5px;
+$border-width: 1px;
+$border-style: solid;
+$border-color: $color-border;
+
+$border: $border-width $border-style $border-color;
+
+// Focus state styling
+$focus-outline-width: 2px;
+$focus-outline-style: solid;
+$focus-outline-color: $red;
+$focus-outline: $focus-outline-width $focus-outline-style $focus-outline-color;
+$focus-outline-offset: 0;
+
+// button active state colors
+$color-btn-active: #ffca31;
+$color-btn-primary-active: #ff0034;
+$color-btn-secondary-active: #0f9500;
+$color-btn-tertiary-active: #347bd6;
+
+// Default project transitions
+$transition-speed: 0.4s;
+$transition-easing: ease;
+
+// some different speed variables
+$transition-speed-slow: 1.2s;
+$transition-speed-medium: 0.8s;
+$transition-speed-fast: 0.2s;
+
+// z-index scale (private vars)
+// Do not edit the z-index scale!
+// --------------------------------------------------
+$z-index-1: 100;
+$z-index-2: 200;
+$z-index-3: 300;
+$z-index-4: 400;
+$z-index-5: 500;
+$z-index-6: 600;
+$z-index-7: 700;
+$z-index-8: 800;
+$z-index-9: 900;
+$z-index-10: 1000;
+
+// z-index master list
+// Add application scoped z-index values as variables.
+// Group elements by layer to enable easy determination of relative layering of disconnected elements
+// REALLY useful for someone unfamiliar with your project!
+// --------------------------------------------------------------------------------------------------
+
+$z-index-modal-backdrop: $z-index-1;
+//$z-index-some-other element:  $z-index-1; // some other element on the same relative layer
+
+$z-index-modal: $z-index-2; // a higher layer than its background
+
+$z-index-modal-dialog: $z-index-3;
+
+$z-index-cookie-policy: $z-index-4; // will always appear above modals

@@ -1,0 +1,43 @@
+<footer class="footer" id="footer" role="contentinfo">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <div class="footer__inner">
+          <img src="/images/brand-logo-secondary.svg" alt="Code Test" />
+
+          <p>&copy; 2021 <span>Dotcentric</span> Code Test - All rights reserved - Call <a
+              href="tel:01234 432 123">01234 432 123</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/Static/build/js/jquery-3.2.1.min.js"><\/script>')</script>
+<script src="/Static/build/js/libs.js" defer></script>
+
+<script defer>
+  function supportsES6() {
+    return window.Promise && window.fetch && window.Symbol;
+  }
+
+  function loadScript(src) {
+    var js = document.createElement('script');
+    js.src = src;
+
+    document.body.appendChild(js);
+  }
+
+  if (supportsES6()) {
+    loadScript('/Static/build/js/scripts.js');
+  } else {
+    loadScript('/Static/build/js/scripts-legacy.js');
+  }
+</script>
+
+</body>
+
+</html>

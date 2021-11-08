@@ -1,0 +1,15 @@
+<svg id="icon_solid_menu" data-name="icon/solid/menu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="menu" d="M0,14V12H22v2ZM0,8V6H22V8ZM0,2V0H22V2Z" transform="translate(5 9)"/>
+    </clipPath>
+  </defs>
+  <g id="Group_3" data-name="Group 3">
+    <path id="menu-2" data-name="menu" d="M0,14V12H22v2ZM0,8V6H22V8ZM0,2V0H22V2Z" transform="translate(5 9)"/>
+    <g id="Mask_Group_3" data-name="Mask Group 3" clip-path="url(#clip-path)">
+      <g id="Color_Solid_Primary" data-name="Color/Solid/Primary" transform="translate(-22 -25)">
+        <rect id="color" width="80" height="80" fill="#0e3757"/>
+      </g>
+    </g>
+  </g>
+</svg>

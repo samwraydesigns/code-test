@@ -1,0 +1,170 @@
+/*------------------------------------*\
+    $FORMS
+\*------------------------------------*/
+
+form {
+  margin: 0;
+}
+
+// overrides fieldset styling in  _normalize.scss
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+label,
+.form__label {
+  margin: 0 0 5px 0;
+  display: block;
+  clear: both;
+  color: #0e1c2d;
+  font-weight: 400;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: $body-font-desktop;
+  font-family: $brand-font-1;
+}
+
+textarea {
+  resize: vertical;
+}
+
+legend {
+  white-space: normal;
+}
+
+button {
+  line-height: normal;
+}
+
+input:valid,
+textarea:valid {
+}
+
+::-webkit-input-placeholder {
+  color: $text-placeholder;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  color: $text-placeholder;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: $text-placeholder;
+  opacity: 1;
+}
+
+// To add, with examples
+
+// Form structure
+
+.form-wrapper {
+  width: 210px;
+
+  @include breakpoint(sm) {
+    width: 360px;
+  }
+}
+
+//wrapper for a label, element and associated validation
+.form__group {
+  margin: 0 0 30px 0;
+}
+
+//wrapper for multiple grouped inline groups - eg date/time/year fields
+.form__group-wrapper {
+  margin-bottom: 1.5em;
+}
+
+//wrapper for form element and validation
+.form__item {
+}
+
+.validation {
+  display: none;
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 8px;
+}
+
+.has-error .validation {
+  clear: both;
+  display: block;
+  color: $pink;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+input[type='password'],
+textarea,
+select {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 11px;
+  color: #555;
+  background-color: $white;
+  background-image: none;
+  border: 2px solid #dadada;
+  border-radius: $border-radius;
+
+  &:focus {
+    border-color: #0e3757;
+    outline: none;
+  }
+
+  .has-error & {
+    border-color: $pink;
+  }
+
+  &:disabled {
+    background-color: $color-link-disabled;
+  }
+
+  &:required {
+    background-image: url('/images/required.svg');
+    background-repeat: no-repeat;
+    background-position: right 11px top 50%;
+
+    .has-error & {
+      background-image: url('/images/error.svg');
+    }
+  }
+}
+
+textarea:required {
+  background-position: right 11px bottom 20px;
+}
+
+.form__buttons {
+  width: 100%;
+
+  @include breakpoint(md) {
+    display: flex;
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+
+    @include breakpoint(md) {
+      margin-left: auto;
+      padding-left: 35px;
+      padding-right: 35px;
+      width: auto;
+    }
+  }
+}
+
+.form-area {
+  margin: 0 auto;
+  max-width: 580px;
+}

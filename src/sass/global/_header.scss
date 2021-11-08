@@ -1,0 +1,53 @@
+/*------------------------------------*\
+    $HEADER
+\*------------------------------------*/
+
+.header {
+  margin: 0;
+  padding: 20px 0 0;
+  display: flex;
+  width: 100%;
+
+  @include breakpoint(md) {
+    margin: 0 0 20px 0;
+    padding: 20px 0;
+  }
+}
+
+.site-logo {
+  display: block;
+}
+
+.header__mobile-btn {
+  display: block;
+  margin-left: auto;
+  width: 32px;
+  height: 32px;
+  background: url('/images/menu-icon.svg') no-repeat;
+  border: none;
+  outline: none;
+
+  .body--nav-open & {
+    background: url('/images/menu-icon-active.svg') no-repeat;
+  }
+
+  @include breakpoint(md) {
+    display: none;
+  }
+}
+
+.header__navigation {
+  @include between-breakpoints($xs-min, $sm-max) {
+    position: fixed;
+    top: 0;
+    left: 100vw;
+    background: $blue;
+    width: calc(100vw - 62px);
+    height: 100%;
+    color: $white;
+    padding: 20px 30px;
+  }
+  @include breakpoint(md) {
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,28 @@
+/*------------------------------------*\
+    $SKIP LINK
+\*------------------------------------*/
+
+// skip-navigation link should become visible on focus
+
+.skip-link {
+  padding: 5px 10px 10px 10px;
+  background-color: $pink;
+  display: block;
+  position: absolute;
+  top: -100%;
+  left: 2px;
+  z-index: 1000;
+  color: $white;
+  text-decoration: none !important;
+
+  &:focus {
+    top: 2px;
+    transition: 0.3s ease all;
+    color: $white;
+  }
+}
+
+.skip-link:visited {
+  color: $white;
+}
+

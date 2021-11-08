@@ -1,0 +1,95 @@
+/*------------------------------------*\
+    $COMMENTS
+\*------------------------------------*/
+
+/*------------------------------------*\
+    $SECTION HEADING
+\*------------------------------------*/
+
+/* ----- single line subheading ----- */
+
+/**
+ * multi-line comments that will output
+ * in the CSS depending on the mode
+ * these comments use DocBlock formatting
+ */
+
+/* short comment */
+
+/*ul*/
+
+// use this for multiline comments
+// that will not output
+// in the CSS
+
+/*------------------------------------*\
+    $UTILITIES
+\*------------------------------------*/
+@import 'utilities/directional'; // rtl support - see: https://github.com/tysonmatanich/directional-scss
+@import 'utilities/variables';
+@import 'utilities/mixins';
+
+/*------------------------------------*\
+    $BASE
+\*------------------------------------*/
+
+// generic utility styles, variables and mixins, base styles, unclassed HTML elements etc.
+@import 'base/normalize';
+@import 'base/reset';
+@import 'base/helper';
+@import 'base/typography';
+@import 'base/forms';
+
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+/**
+ * structural elements/areas, grids, columns etc.
+ */
+
+@import 'layout/layout';
+
+/*------------------------------------*\
+    $GRID
+\*------------------------------------*/
+/**
+ * structural elements/areas, grids, columns etc.
+ */
+@import 'bootstrap4-grid/bootstrap-grid';
+
+/*------------------------------------*\
+    $VENDOR
+\*------------------------------------*/
+/**
+ * CSS or Sass from other projects - do not change, but overwrite if necessary.
+ */
+
+/*------------------------------------*\
+    $GLOABL
+\*------------------------------------*/
+/**
+ * Global elements that are on all or the majority of pages, such as header, footer etc
+ */
+@import 'global/header';
+@import 'global/footer';
+
+/*------------------------------------*\
+    $COMPONENTS
+\*------------------------------------*/
+/**
+ * objects and abstractions etc.
+ */
+@import 'components/buttons';
+@import 'components/site-menu';
+@import 'components/section-intro';
+@import 'components/image-block';
+@import 'components/full-bar';
+@import 'components/services';
+
+/*------------------------------------*\
+    $PRINT
+\*------------------------------------*/
+/**
+ * print style
+ */
+@import 'base/print';

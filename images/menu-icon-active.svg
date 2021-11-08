@@ -1,0 +1,17 @@
+<svg id="Header" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="close" d="M8.485,9.9,1.414,16.97,0,15.557,7.071,8.485,0,1.414,1.414,0,8.485,7.071,15.557,0,16.97,1.414,9.9,8.485l7.071,7.071L15.557,16.97Z" transform="translate(7.515 7.515)"/>
+    </clipPath>
+  </defs>
+  <g id="icon_solid_menu" data-name="icon/solid/menu">
+    <g id="Group_4" data-name="Group 4">
+      <path id="close-2" data-name="close" d="M8.485,9.9,1.414,16.97,0,15.557,7.071,8.485,0,1.414,1.414,0,8.485,7.071,15.557,0,16.97,1.414,9.9,8.485l7.071,7.071L15.557,16.97Z" transform="translate(7.515 7.515)"/>
+      <g id="Mask_Group_4" data-name="Mask Group 4" clip-path="url(#clip-path)">
+        <g id="Color_Solid_Primary" data-name="Color/Solid/Primary" transform="translate(-22 -25)">
+          <rect id="color" width="80" height="80" fill="#0e3757"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
