@@ -1,11 +1,10 @@
 const init = () => {
-
   //  ===========================================
   //  = Load scripts based on modernizer tests  =
   //  ===========================================
 
-  if(!Modernizr.picture) {
-    $.getScript('/Static/build/js/picturefill.min.js');
+  if (!Modernizr.picture) {
+    $.getScript('/build/js/picturefill.min.js');
   }
 
   // exammple of a method being invoked after a script
@@ -16,6 +15,6 @@ const init = () => {
   //       $('input, textarea').placeholder();
   //     });
   // }
-}
+};
 
-export { init }
+export { init };

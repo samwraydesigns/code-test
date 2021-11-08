@@ -38,6 +38,7 @@
     "gulp-svg-sprite": "^1.5.0",
     "gulp-uglify": "^3.0.0",
     "gulp-watch": "^5.0.1",
+    "http-server": "^14.0.0",
     "intersection-observer": "^0.12.0",
     "lodash": "^4.17.15",
     "merge": "^1.2.1",
@@ -64,6 +65,7 @@
     "webpack-merge": "^4.1.2"
   },
   "scripts": {
+    "serve": "http-server ./html/",
     "gulp": "gulp",
     "dev": "gulp",
     "deploy": "gulp deploy",

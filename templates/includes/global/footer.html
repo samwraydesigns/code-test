@@ -16,8 +16,8 @@
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="/Static/build/js/jquery-3.2.1.min.js"><\/script>')</script>
-<script src="/Static/build/js/libs.js" defer></script>
+<script>window.jQuery || document.write('<script src="/build/js/jquery-3.2.1.min.js"><\/script>')</script>
+<script src="/build/js/libs.js" defer></script>
 
 <script defer>
   function supportsES6() {
@@ -32,9 +32,9 @@
   }
 
   if (supportsES6()) {
-    loadScript('/Static/build/js/scripts.js');
+    loadScript('/build/js/scripts.js');
   } else {
-    loadScript('/Static/build/js/scripts-legacy.js');
+    loadScript('/build/js/scripts-legacy.js');
   }
 </script>
 
